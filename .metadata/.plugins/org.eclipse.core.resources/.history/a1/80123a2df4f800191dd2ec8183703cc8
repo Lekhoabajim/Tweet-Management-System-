@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:x="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+	<title>Tweets</title>
+</h:head>
+<h:body>
+	<h2>Tweets</h2>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="What's on your Mind: " />
+			<h:inputText value="#{tweetController.tweet.tweetBody}"></h:inputText>
+			<h:commandButton value="Post" action="#{tweetController.postTweet}"></h:commandButton>
+		</h:panelGrid>
+	</h:form>
+	
+	<h2>Previous Tweets</h2>
+	<h:form>
+		<h:panelGrid columns="2">
+			<x:repeat var="t" value="#{tweetController.getAllTweets()}">
+				<h:outputText value="Tweet: " />
+				<h:outputText value="#{t.getTweetBody()}" />
+				<br />
+				<h:outputText value="#{t.getTimestamp()}" />
+				<br/>
+				<br/>
+			</x:repeat>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

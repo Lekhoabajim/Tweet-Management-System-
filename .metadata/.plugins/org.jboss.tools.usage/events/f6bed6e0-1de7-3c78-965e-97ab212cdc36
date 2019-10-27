@@ -1,0 +1,11 @@
+#Sun Oct 27 12:56:42 CAT 2019
+vl=How many times the 'Finish' button pressed during the day
+l=Wizard class name
+ct=jbt
+d=1572173802445
+c=0
+cmp=usage
+a=finishWizard
+cl=org.eclipse.jst.j2ee.ui.project.facet.EarProjectWizard
+v=2.2.202
+s=1

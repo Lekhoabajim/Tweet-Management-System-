@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: lib/hibernate-c3p0-4.3.8.Final.jar lib/hibernate-commons-a
+ nnotations-4.0.5.Final.jar lib/hibernate-core-4.3.8.Final.jar lib/log
+ 4j-api-2.0.jar lib/mysql-connector-java-8.0.17.jar lib/twitter4j-core
+ -4.0.7.jar lib/twitter4j-stream-4.0.7.jar
+
